@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Black.ttf) format(truetype);
+    src: url(fonts/Raleway-Bold.ttf) format(truetype);
+    src: url(fonts/Raleway-Light.ttf) format(truetype);
+}
+
+* {
+    font-family: Raleway, 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+header {
+    display: inline-flex;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    color: black;
+    border-top: white;
+}
+
+.inscritpion {
+    font-family: 
+    font-weight: bold;
+}
+
+nav, a:hoover {
+    text-decoration: overline;
+    color: #0065FC;
+    border-top: #0065FC;
+}
+
+main h1 {
+    width: 100%;
+}
+
+.main {
+    background-color: #F2F2F2;
+    width: 75%;
+    border-radius: 20px;
+    display: flex;
+}
+
+.article-main {
+    width: 33%;
+    background-color: white;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+}

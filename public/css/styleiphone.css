@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.ttf') format("truetype");
+    src: url('fonts/Raleway-Black.ttf') format("truetype");
+    src: url('fonts/Raleway-Light.ttf') format("truetype");
+    src: url('fonts/Raleway-Regular.ttf') format("truetype");
+}
+
+body {
+    font-family: 'Raleway', 'Franklin Gothic Medium', Geneva, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.logo a{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 2em 1em 2em;
+}
+
+.hebergements {
+    color :#0065FC;
+    border-bottom: 2px #0065FC solid;
+}
+
+.activites {
+    color: black;
+}
+
+.inscription {
+
+
+
+    color: #0065FC;
+}

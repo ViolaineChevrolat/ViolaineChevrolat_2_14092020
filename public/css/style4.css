@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Black.ttf') format(truetype);
+    src: url('fonts/Raleway-Light.ttf') format(truetype);
+}
+
+body {
+    font-family: raleway, Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: auto;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo img {
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 101px;
+}
+
+div ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+    border-top: 2px solid blue;
+}
+
+div a {
+    color: blue;
+    text-decoration: none;
+}
+
+header :nth-child(2) {
+    order: 2;
+}
+
+header :nth-child(3) {
+    order: 1;
+}
+
+/*title*/
+
+
+/*filter*/
+
+form ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.filter {
+    border-radius;: 1px blue solid;
+}
+
+/*main*/
+
+.hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px grey solid;
+    background-color: grey;
+}
+
+.best {
+    display: flex;
+    border-radius: 20px grey solid;
+    background-color: grey;
+}

@@ -1,0 +1,96 @@
+@font-face{
+    font-family: "Raleway";
+    src: url(fonts/Raleway-Black.ttf) format('ttf');
+    src: url(fonts/Raleway-BlackItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-BoldItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-Bold.ttf) format('ttf');
+    src: url(fonts/Raleway-ExtraBold.ttf) format('ttf');
+    src: url(fonts/Raleway-ExtraBoldItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-ExtraLight.ttf) format('ttf');
+    src: url(fonts/Raleway-ExtraLightItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-Italic.ttf) format('ttf');
+    src: url(fonts/Raleway-Light.ttf) format('ttf');
+    src: url(fonts/Raleway-LightItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-Medium.ttf) format('ttf');
+    src: url(fonts/Raleway-MediumItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-Regular.ttf) format('ttf');
+    src: url(fonts/Raleway-SemiBold.ttf) format('ttf');
+    src: url(fonts/Raleway-SemiBoldItalic.ttf) format('ttf');
+    src: url(fonts/Raleway-Thin.ttf) format('ttf');
+    src: url(fonts/Raleway-ThinItalic.ttf) format('ttf');
+}
+
+* {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+header nav{
+    text-align: right;
+}
+
+header img {
+    text-align: left;
+    display: inline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: inline;
+}
+
+a:active   {
+    color:#0065FC;
+    text-decoration: overline;
+    border-top: #0065FC;
+}
+
+a {
+    color: #0065FC;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: top;
+    float: left;
+}
+
+.main {
+    width: 75%;
+    height: 849px;
+    border-radius: 20px solid #F2F2F2;
+    background-color:  #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.article-main {
+    width: 25%;
+    height: 333px;
+    border-radius: 20px solid white;
+    background-color: white;
+    margin: auto;   
+}
+.best {
+    width: 571px;
+    height: 849px;
+    border-radius: 20px solid #F2F2F2;
+    background-color:  #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.article-best {
+    width: 455px;
+    height: 197px;
+    border-radius: 20px solid white;
+    background-color: white;
+    margin: auto;   
+}
+
+.title-end {
+    texte-align: left;
+    float: left;
+}
