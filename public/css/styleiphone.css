@@ -25,11 +25,6 @@ main {
     display: flex;
 }
 
-footer {
-    background-color: #F2F2F2;
-    display: flex;
-}
-
 h2 {
     font-size: 20px;
 }
@@ -37,6 +32,11 @@ h2 {
 .container {
     width: 100%;
     margin: 0 auto;
+}
+
+* a {
+    text-decoration: none;
+    color: black;
 }
 
 /* header */
@@ -79,10 +79,10 @@ nav ul {
     grid-area: inscription;
     justify-self: end;
     font-weight: 900;
+    padding: 0 20px 10px 20px;
 }
 
 nav a {
-    text-decoration: none;
     text-align: center;
     padding: 0 50px 20px 50px;
 }
@@ -138,6 +138,17 @@ form input [type="text"] {   /*a revoir ne marche pas*/
 
 .desktop {
     display: none;
+    border: 1px #0065FC solid;
+    border-radius: 0 20px 20px 0;
+    background-color: #0065FC;
+    color: white;
+}
+
+.iphone {
+    border: 1px #0065FC solid;
+    border-radius: 0 20px 20px 0;
+    background-color: #0065FC;
+    color: white;
 }
 
 div h2 {
@@ -184,6 +195,7 @@ ul i {
     border: 0  #0065FC solid;
     border-radius: 30px;
     background: #DEEBFF;
+    vertical-align: middle;
     width: 40px;
     height: 40px;
     padding: 15px 0 0 15px;
@@ -222,13 +234,15 @@ ul i {
 
 /*the best*/
 
-.best {
+#best {
     display: flex;
     flex-direction: column;
     border: 1px #f2f2f2 solid;
     border-radius: 20px;
     background-color: #f2f2f2;
     margin: 20px 0;
+    width: 375px;
+    height: auto;
 }
 
 .best-title {
@@ -236,7 +250,7 @@ ul i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 20px
+    margin: 0 20px;
 }
 
 .best-title i{
@@ -246,17 +260,17 @@ ul i {
 .the_best {
     display: flex;
     flex-direction: row;
+    clear: both;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
-    margin: 10px;
-    width: 350px;
+    margin: 15px;
+    width: 340px;
     height: 150px;
 }
 
 .the_best a {
-    text-decoration: none;
     display: flex;
     flex-direction: row;
 }
@@ -267,10 +281,6 @@ ul i {
     margin: 5px 5px 4px 5px;
     width: auto;
     height: 140px;
-}
-
-a.the_best > * {
-    position: relative;
 }
 
 .the_best div {
@@ -297,37 +307,35 @@ a.the_best > * {
 
 /*hebergements*/
 
-.hebergement {
+#hebergement {
     display: flex;
     flex-direction: column;
     border: 1px #f2f2f2 solid;
     border-radius: 20px;
     background-color: #f2f2f2;
-
+    width: 375px;
+    height: auto;
 }
 
-#hebergement-title {
-    font-weight: 800;
+.hebergement-title {
+    font-weight: 900;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 20px
+    margin: 20px 0 0 20px;
 }
 
 .hotel {
     display: flex;
     flex-direction: row;
+    clear: both;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
-    margin: 10px;
-    width: 350px;
+    margin: 20px;
+    width: 340px;
     height: 250px;
-}
-
-.hotel a {
-    text-decoration: none;
 }
 
 .hotel figure {
@@ -338,7 +346,32 @@ a.the_best > * {
     object-fit: cover;
     border-radius: 18px 18px 0 0;
     width: auto;
-    height: 164px;
+    height: 159px;
+}
+
+.hotel figcaption {
+    font-weight: 900;
+    padding-top: 7px;
+    margin-left: 15px;
+}
+
+.hotel div {
+    margin-left: 18px;
+    font-size: 1em;
+}
+
+.hotel div p {
+    margin: 0;
+}
+
+.hotel i {
+    font-size: 0.8em;
+    color: #0065FC;
+    margin
+}
+
+div h3 {
+    margin: 0 0 20px 20px;
 }
 
 /*activites*/
@@ -346,51 +379,80 @@ a.the_best > * {
 .activities {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    margin: 20px 0 20px 0;
+    width: 375px;
+    height: auto;
+}
+
+#activities-title {
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 10px 20px;
 }
 
 .sorties {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    clear: both;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 5px 5px 5px #c0bebe;
-
-    margin : 10px;
+    box-shadow: 5px 5px 5px #E5E4E4;
+    margin: 10px;
+    width: 340px;
+    height: 250px;
 }
 
 .sorties img {
-    position: relative;
-    Object-fit: cover;
-    overflow: hidden;
-    border: 0 white solid;
-    border-radius: 20px 20px 0 0;
-}
-
-#activities-title {
-    font-weight: 800;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 20px
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+    width: 340px;
+    height: 200px;
 }
 
 .sorties figure {
-    margin: 8px 40px 24px 40px;
-}
-
-.sorties figcaption {
-    margin: 20px;
-    font-weight: bolder;
     margin: 0;
 }
 
+.sorties a {
+    text-decoration: none;
+    color: black;
+}
+
+.sorties figcaption {
+margin: 10px 0 0 10px;
+
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.footer h3 {
+    margin: 20px;
+}
+
+.footer p {
+    margin-left: 20px;
+}
+
+.footer p:last-child {
+    margin-bottom: 40px;
+}
 
 
-@media screen and (min-width: 600px){
+
+
+@media screen and (min-width: 800px) {
 
 
     nav ul {
@@ -398,7 +460,6 @@ a.the_best > * {
         grid-row: repeat(9, 1fr);
         grid-template-areas: 
             "logo . . . . . activ activites inscription";
-
     }
 
     nav a {
@@ -435,8 +496,18 @@ a.the_best > * {
     }
 
 
-    .the_best {
-        
+    #the_best {
+
     }
 
+    .hebergement {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 3;
+        width: 2.5em;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
 }

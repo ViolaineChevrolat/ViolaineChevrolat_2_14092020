@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li class="logo"><img src="public/images/logo/logo_reservia.png" alt="Reservia"></li>
-                    <li class="active"><a href="#hebergement-title">Hébergements</a></li>
+                    <li class="active"><a href="#hebergement">Hébergements</a></li>
                     <li class="activites"><a href="#activities-title">Activités</a></li>
                     <li class="inscription">S'inscrire</li>
                 </ul>
@@ -31,8 +31,8 @@
             <form method="post" action="traitement.php">
                     <label for="localite"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="text" name="localite" id="localite" placeholder="Marseille, France">
-                    <div class="desktop"><button type="submit">Rechercher</div>
-                    <div class="iphone"><button type="submit"><i class="fas fa-search"></i></div>
+                    <button class="desktop" type="submit">Rechercher</button>
+                    <button class="iphone" type="submit"><i class="fas fa-search"></i></button>
             </form>
 
             <div class="filtres">
@@ -58,7 +58,7 @@
 
         <div class="container">
 
-            <section class="best">
+            <section id="best">
                 <div class="best-title"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
                 <div class="the_best">
                     <a href="#">
@@ -92,8 +92,8 @@
                 </div>
             </section>
             
-            <section class="hebergement">
-                <div><h2 id="hebergement-title">Hébergements à Marseille</h2></div>
+            <section id="hebergement">
+                <div><h2 class="hebergement-title">Hébergements à Marseille</h2></div>
                 <div class="hotel">
                     <a href="#">
                         <figure>
@@ -101,7 +101,7 @@
                             <figcaption>Auberge la Cannebière</figcaption>
                         </figure>
                         <div>
-                            <p>Nuit à partir de <strong>25€</strong></p><br>
+                            <p>Nuit à partir de <strong>25€</strong></p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
                         </div>
                     </a>
@@ -113,7 +113,7 @@
                             <figcaption>Hôtel du port</figcaption>
                         </figure>
                         <div>
-                            <p>Nuit à partir de <strong>52€</strong></p><br>
+                            <p>Nuit à partir de <strong>52€</strong></p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
@@ -166,7 +166,9 @@
                         </div>
                     </a>
                 </div>
-                    <h3 class="hebergement-title">Afficher plus</h3>
+                <div>
+                    <h3>Afficher plus</h3>
+                </div>
             </section>
 
 
@@ -227,31 +229,21 @@
     </main>
 
     <footer>
-        <div class="container">
-
-            <table class="footer">
-                <tr>
-                    <th>A propos</th>
-                    <th>Nos hébergements</th>
-                    <th>Assistance</th>
-                </tr>
-                <tr>
-                    <td><a href="#">Fonctionnement du site</a></td>
-                    <td><a href="#">Charte qualité</a></td>
-                    <td><a href="#">Centre d'aide</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Conditons générales de vente</a></td>
-                    <td><a href="#">Soumettre votre hôtel</a></td>
-                    <td><a href="#">Nous contacter</a></td>
-                </tr> 
-                <tr>
-                    <td><a href="#">Données et confidentialité</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>  
-            </table>
-
+        <div class="footer">
+            <h3>A propos</h3>
+            <p><a href="#">Fonctionnement du site</a></p>
+            <p><a href="#">Conditons générales de vente</a></p>
+            <p><a href="#">Données et confidentialité</a></p>
+        </div>
+        <div class="footer">
+            <h3>Nos hébergements</h3>
+            <p><a href="#">Charte qualité</a></p>
+            <p><a href="#">Soumettre votre hôtel</a></p>                
+        </div>
+        <div class="footer">
+            <h3>Assistance</h3>
+            <p><a href="#">Centre d'aide</a></p>
+            <p><a href="#">Nous contacter</a></p>
         </div>
     </footer>
 
