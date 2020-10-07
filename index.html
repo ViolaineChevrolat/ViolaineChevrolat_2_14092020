@@ -10,10 +10,12 @@
 
 <body>
 
+    <!-- entête du site Reservia -->
     <header>
 
-        <div class="container">
+        <div class="container0">
 
+            <!-- entête logo et liens de navigation -->
             <nav>
                 <ul>
                     <li class="logo"><img src="public/images/logo/logo_reservia.png" alt="Reservia"></li>
@@ -23,11 +25,13 @@
                 </ul>
             </nav>
 
+            <!-- paragraphe d'entête -->
             <div class="title">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
+            <!-- formulaire de localisation -->
             <form method="post" action="traitement.php">
                     <label for="localite"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="text" name="localite" id="localite" placeholder="Marseille, France">
@@ -35,6 +39,7 @@
                     <button class="iphone" type="submit"><i class="fas fa-search"></i></button>
             </form>
 
+            <!-- filtres de recherche -->
             <div class="filtres">
                 <h2>Filtres</h2>
                 <ul>
@@ -45,6 +50,7 @@
                 </ul>
             </div>
 
+            <!-- info -->
             <div class="info">
                 <p><i class="fas fa-info"></i></p>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -54,10 +60,11 @@
 
     </header>
 
+    <!-- contenu du site Reservia -->
     <main>
 
-        <div class="container">
-
+        <div class="container1">
+            <!-- les plus populaires -->
             <section id="best">
                 <div class="best-title"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
                 <div class="the_best">
@@ -74,9 +81,9 @@
                     <a href="#">
                         <img src="public/images/hebergements/au_coeur_de_l_eau.jpg" alt="Au coeur de l'eau">
                         <div>
-                            <h4>Au coeur de l'eau</h4>
+                            <h4>Au coeur de l'eau<br>Chambres d'hôtes</h4>
                             <p>Nuit à partir de <strong>71€</strong></p>
-                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p class="last-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
                 </div>
@@ -86,12 +93,14 @@
                         <div>
                             <h4>Hôtel Tout bleu et Blanc</h4>
                             <p>Nuit à partir de <strong>68€</strong>
-                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p class="last-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
                 </div>
             </section>
+
             
+            <!-- hébergements à Marseille -->
             <section id="hebergement">
                 <div><h2 class="hebergement-title">Hébergements à Marseille</h2></div>
                 <div class="hotel">
@@ -102,7 +111,7 @@
                         </figure>
                         <div>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p class="hotel-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
                 </div>
@@ -126,7 +135,7 @@
                         </figure>
                         <div>
                             <p>Nuit à partir de <strong>76€</strong></p>
-                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p class="hotel-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
                 </div>
@@ -138,7 +147,7 @@
                         </figure>
                         <div>
                             <p>Nuit à partir de <strong>46€</strong></p>
-                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <p class="hotel-twostars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
                 </div>
@@ -150,7 +159,7 @@
                         </figure>
                         <div>
                             <p>Nuit à partir de <strong>23€</strong></p>
-                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p class="hotel-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </div>
                     </a>
                 </div>
@@ -171,8 +180,12 @@
                 </div>
             </section>
 
+        </div>
 
-            
+            <!-- activités -->
+
+        <div class="container2">
+
             <aside class="activities">
                 <div><h2 id="activities-title">Activités à Marseille</h2></div>
                 <div class="sorties">
@@ -224,28 +237,36 @@
                     </a>
                 </div>
             </aside>
+
         </div>
 
     </main>
 
+    <!-- pied de page du site Reservia -->
     <footer>
-        <div class="footer">
-            <h3>A propos</h3>
-            <p><a href="#">Fonctionnement du site</a></p>
-            <p><a href="#">Conditons générales de vente</a></p>
-            <p><a href="#">Données et confidentialité</a></p>
+
+        <div class="container3">
+            <div class="footer">
+                <h3>A propos</h3>
+                <p><a href="#">Fonctionnement du site</a></p>
+                <p><a href="#">Conditons générales de vente</a></p>
+                <p><a href="#">Données et confidentialité</a></p>
+            </div>
+            <div class="footer">
+                <h3>Nos hébergements</h3>
+                <p><a href="#">Charte qualité</a></p>
+                <p><a href="#">Soumettre votre hôtel</a></p>                
+            </div>
+            <div class="footer">
+                <h3>Assistance</h3>
+                <p><a href="#">Centre d'aide</a></p>
+                <p><a href="#">Nous contacter</a></p>
+            </div>
+
         </div>
-        <div class="footer">
-            <h3>Nos hébergements</h3>
-            <p><a href="#">Charte qualité</a></p>
-            <p><a href="#">Soumettre votre hôtel</a></p>                
-        </div>
-        <div class="footer">
-            <h3>Assistance</h3>
-            <p><a href="#">Centre d'aide</a></p>
-            <p><a href="#">Nous contacter</a></p>
-        </div>
+         
     </footer>
 
 </body>
+
 </html>

@@ -21,15 +21,15 @@ body {
 }
 
 main {
-    flex-grow: 1;
     display: flex;
+    flex-direction: column;
 }
 
 h2 {
     font-size: 20px;
 }
 
-.container {
+.container0 .container1 .container2 .container3 {
     width: 100%;
     margin: 0 auto;
 }
@@ -39,8 +39,10 @@ h2 {
     color: black;
 }
 
-/* header */
-    /* nav */
+
+/* entête du site Reservia */
+
+    /* entête logo et liens de navigation */
 
 nav ul {
     display: grid;
@@ -92,10 +94,11 @@ nav a:hover {
     color: #0065FC;
 }
 
-    /* div */
+
+    /* paragraphe d'entête */
 
 .title h2 {
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .title {
@@ -103,7 +106,7 @@ nav a:hover {
 }
 
 
-/* form */
+    /* formulaire de localisation */
 
 form {
     display: flex;
@@ -138,15 +141,11 @@ form input [type="text"] {   /*a revoir ne marche pas*/
 
 .desktop {
     display: none;
-    border: 1px #0065FC solid;
-    border-radius: 0 20px 20px 0;
-    background-color: #0065FC;
-    color: white;
 }
 
 .iphone {
     border: 1px #0065FC solid;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 10px 10px 0;
     background-color: #0065FC;
     color: white;
 }
@@ -157,7 +156,7 @@ div h2 {
 }
 
 
-/* div filtres */
+    /* filtres de recherche */
 
 .filtres {
     display: block;
@@ -174,9 +173,15 @@ div h2 {
     margin: 0;
 }
 
+.filtres h2 {
+    margin: 0;
+}
+
 .filter {    
     list-style-type: none;
     font-size: 400;
+    border: 1px #DEEBFF solid;
+    border-radius: 30px;
     margin: 20px 0 0 0;
 }
 
@@ -186,8 +191,9 @@ div h2 {
     color: black;
 }
 
-.filtres h2 {
-    margin: 0;
+.filter :hover {
+    text-transform: uppercase;
+    color: #0065FC;
 }
 
 ul i {
@@ -198,24 +204,11 @@ ul i {
     vertical-align: middle;
     width: 40px;
     height: 40px;
-    padding: 15px 0 0 15px;
-}
-
-.filter {
-    border: 1px #DEEBFF solid;
-    border-radius: 30px;
+    padding: 22px 0 0 22px;
 }
 
 
-/*info*/
-
-.info i {
-    color: #0065FC;
-    border: 1px  #f2f2f2 solid;
-    border-radius: 20px;    
-    width: 40px;
-    height: 40px;
-}
+    /*info*/
 
 .info {
     display: flex;
@@ -232,7 +225,11 @@ ul i {
     text-align: center;
 }
 
-/*the best*/
+
+
+/*contenu du site Reservia*/
+
+    /*les plus populaires*/
 
 #best {
     display: flex;
@@ -241,7 +238,7 @@ ul i {
     border-radius: 20px;
     background-color: #f2f2f2;
     margin: 20px 0;
-    width: 375px;
+    width: auto;
     height: auto;
 }
 
@@ -266,8 +263,7 @@ ul i {
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
     margin: 15px;
-    width: 340px;
-    height: 150px;
+    width: auto;
 }
 
 .the_best a {
@@ -284,28 +280,37 @@ ul i {
 }
 
 .the_best div {
-    margin-left: 10px;
+    margin: 0 10px 0 10px;
     color: black;
 }
 
 .the_best h4 {
     font-weight: 900;
     margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.the_best p {
+    margin: 10px 0 10px 0;
 }
 
 .stars i {
-    margin-top: 25px;
+    margin-top: 20px;
     color: #0065FC;
     font-size: 0.8em;
 }
 
-.stars i :last-child {  /* ne marche pas */
-    color: #f2f2f2;
+.last-stars i {
+    margin-top: 20px;
+    color: #0065FC;
+    font-size: 0.8em;
 }
 
+.last-stars i:last-child {
+    color: #E5E4E4;
+}
 
-
-/*hebergements*/
+    /* hébergements à Marseille */
 
 #hebergement {
     display: flex;
@@ -313,8 +318,7 @@ ul i {
     border: 1px #f2f2f2 solid;
     border-radius: 20px;
     background-color: #f2f2f2;
-    width: 375px;
-    height: auto;
+    width: auto;
 }
 
 .hebergement-title {
@@ -334,8 +338,7 @@ ul i {
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
     margin: 20px;
-    width: 340px;
-    height: 250px;
+    width: auto;
 }
 
 .hotel figure {
@@ -345,14 +348,14 @@ ul i {
 .hotel img {
     object-fit: cover;
     border-radius: 18px 18px 0 0;
-    width: auto;
-    height: 159px;
+    max-width: 100%;
+    height: auto;
 }
 
 .hotel figcaption {
     font-weight: 900;
-    padding-top: 7px;
-    margin-left: 15px;
+    padding-top: 0;
+    margin-left: 12px;
 }
 
 .hotel div {
@@ -367,14 +370,23 @@ ul i {
 .hotel i {
     font-size: 0.8em;
     color: #0065FC;
-    margin
+    margin-bottom: 10px;
 }
 
 div h3 {
     margin: 0 0 20px 20px;
 }
 
-/*activites*/
+.hotel-stars i:last-child {
+    color: #E5E4E4;
+}
+
+.hotel-twostars i:nth-last-child(-n+2) {
+    color: #E5E4E4;
+}
+
+
+    /* activités */
 
 .activities {
     display: flex;
@@ -426,14 +438,16 @@ margin: 10px 0 0 10px;
 
 }
 
-/*footer*/
+    
+    /* pied de page du site Reservia */
 
 footer {
-    display: flex;
+    display: block;
     flex-direction: column;
     background-color: #F2F2F2;
     margin: 0;
-    width: 100%;
+    padding: 0;
+    max-width: 100%;
     height: auto;
 }
 
@@ -455,6 +469,10 @@ footer {
 @media screen and (min-width: 800px) {
 
 
+/* entête du site Reservia */
+
+    /* entête logo et liens de navigation */
+
     nav ul {
         grid-template-columns: 0;
         grid-row: repeat(9, 1fr);
@@ -472,13 +490,23 @@ footer {
         color: #0065FC;
     }
 
+
+    /* formulaire de localisation */
+
     .iphone {
         display: none;
     }
 
     .desktop {
         display: contents;
+        border: 1px #0065FC solid;
+        border-radius: 0 20px 20px 0;
+        background-color: #0065FC;
+        color: white;
     }
+
+
+        /* filtres de recherche */
     
     .filtres {
         display: flex;
@@ -495,19 +523,86 @@ footer {
         margin: 0 20px 20px 20px;
     }
 
-
-    #the_best {
-
+    .filtres h2 {
+        margin-top: 14px;
     }
 
-    .hebergement {
+
+/*contenu du site Reservia*/
+
+    .container1 {
         display: flex;
         flex-direction: row;
-        flex-grow: 3;
-        width: 2.5em;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    /*les plus populaires*/
+
+    #the_best {
+        align-self: flex-end;
+        max-width: 30%;
+        margin: 0 20px 20px 0;
     }
 
-    footer {
+    /* hébergements à Marseille */
+
+    #hebergement {
+        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        order: -1;
+        max-width: 70%;
+    }
+
+    .hebergement-title {  /*ne marche pas*/
+        min-width: 1500px;
+    }
+
+    .hotel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div h3 {
+        width: 1500px;
+    }
+
+
+    /* activités */
+
+    .activities {
+        flex-direction: row;
+        margin: 20px 0 20px 0;
+        width: 1500px;
+        height: auto;
+    }
+
+    .activities {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 0;
+        width: 375px;
+        height: auto;
+    }
+
+
+/* pied de page du site Reservia */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer {
+        margin: 0 30px 0 30px;
+    }
+
 }
