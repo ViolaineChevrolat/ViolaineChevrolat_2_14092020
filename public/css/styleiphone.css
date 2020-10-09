@@ -469,12 +469,11 @@ footer {
 
 @media screen and (min-width: 800px) {
 
-/*
-    body {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 
+    body {
+        wight: 1800px;
+    }
+/*
     .container1 .container3 {
         flex-direction: row;
         flex-wrap: wrap;
@@ -551,7 +550,7 @@ footer {
     /*les plus populaires*/
 
     #the_best {
-        max-width: 25%;
+        max-width: 30%;
         margin: 0 20px 20px 0;
     }
 
@@ -561,13 +560,16 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         order: -1;
-        max-width: 65%;
+        max-width: 70%;
     }
 
     .hebergement-title {  
         min-width: 1500px;
     }
 
+    .hotel {
+        justify-content: space-evenly;
+    }
 
     div h3 {
         width: 1500px;
