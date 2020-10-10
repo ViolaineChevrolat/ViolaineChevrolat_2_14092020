@@ -238,7 +238,7 @@ ul i {
     border: 1px #f2f2f2 solid;
     border-radius: 20px;
     background-color: #f2f2f2;
-    margin: 20px 0;
+    margin: 0;
 }
 
 .best-title {
@@ -316,6 +316,7 @@ ul i {
     border: 1px #f2f2f2 solid;
     border-radius: 20px;
     background-color: #f2f2f2;
+    margin-top: 20px;
 }
 
 .hebergement-title {
@@ -329,6 +330,7 @@ ul i {
 .hotel {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
@@ -408,7 +410,7 @@ div h3 {
 .sorties {
     display: flex;
     flex-direction: row;
-    clear: both;
+    justify-content: center;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
@@ -469,10 +471,6 @@ footer {
 
 @media screen and (min-width: 800px) {
 
-
-    body {
-        wight: 1800px;
-    }
 /*
     .container1 .container3 {
         flex-direction: row;
@@ -527,6 +525,7 @@ footer {
     .filtres ul {
         display: flex;
         justify-content: space-between;
+        flex-basis: 60%;
     }
 
     .filtres li {
@@ -551,7 +550,7 @@ footer {
 
     #the_best {
         max-width: 30%;
-        margin: 0 20px 20px 0;
+        margin: 0 0;
     }
 
     /* hébergements à Marseille */
@@ -559,6 +558,7 @@ footer {
     #hebergement {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 0;
         order: -1;
         max-width: 70%;
     }
@@ -596,6 +596,14 @@ footer {
         height: 500px;
     }
 
+    .sortie1 {
+        margin: 3px 0;
+    }
+
+    .sortie2 {
+        margin: 0;
+    }
+
     .sortie1 .sorties figure img {
         flex-basis: 100%;
     }
@@ -615,6 +623,8 @@ footer {
     }
 
     .container3 {
+        display: flex;
+        flex-direction: row;
         width: 1500px;
         height: auto;
         margin-top: 20px;
