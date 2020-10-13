@@ -120,14 +120,14 @@ form label {
     border-radius: 10px 0 0 10px;
     border: 1px #F2F2F2 solid;
     background: #F2F2F2;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 form i {
     font-size: 1em;
     justify-content: center;
-    margin: 8px 0 0 10px;
+    margin: 12px 0 0 14px;
 }
 
 form input[type="text"] {   
@@ -135,9 +135,8 @@ form input[type="text"] {
     border-left: none;
     border-top: #f2f2f2 1px solid;
     border-bottom: #f2f2f2 1px solid;
-    padding: 0 1.5rem;
+    padding: 12px;
     box-sizing: border-box;
-    width: 14rem;
 }
 
 .desktop {
@@ -147,17 +146,22 @@ form input[type="text"] {
 .iphone {
     border: 1px #0065FC solid;
     border-radius: 0 10px 10px 0;
+    padding: 10px;
     background-color: #0065FC;
     color: white;
 }
+
+.iphone i {
+    margin: 0 5px 4px 0;
+}
+
+
+    /* filtres de recherche */
 
 div h2 {
     font-weight: bolder;
     font-size: 1.2em;
 }
-
-
-    /* filtres de recherche */
 
 .filtres {
     display: block;
@@ -352,6 +356,7 @@ ul i {
 
 .hotel img {
     border-radius: 18px 18px 0 0;
+    object-fit: cover;
     flex-basis: 100%;
 }
 
@@ -508,9 +513,10 @@ footer {
     .desktop {
         display: inline-block;
         border: 1px #0065FC solid;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 10px 10px 0;
+        padding: 12px;
         background-color: #0065FC;
-        color: rgb(146, 32, 32);
+        color:white;
     }
 
 
