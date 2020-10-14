@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'Raleway';
     src: url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
     src: url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
@@ -12,12 +12,11 @@
 body {
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
     font-size: 16px;
-    margin: 1em;
+    margin: 10px;
     padding: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 main {
@@ -48,7 +47,7 @@ h2 {
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "logo inscription"
         "activ activites";
@@ -184,7 +183,7 @@ div h2 {
 
 .filter {    
     list-style-type: none;
-    font-size: 400;
+    font-weight: 400;
     border: 1px #DEEBFF solid;
     border-radius: 30px;
     margin: 20px 0 0 0;
@@ -279,7 +278,7 @@ ul i {
     object-fit: cover;
     border-radius: 18px 0 0 18px;
     margin: 5px 5px 4px 5px;
-    flex-basis: 50%;}
+}
 
 .the_best div {
     margin: 0 10px 0 10px;
@@ -344,8 +343,6 @@ ul i {
 
 .hotel figure {
     margin: 5px;
-    object-fit: cover;
-    flex-basis: 100%;
 }
 
 .hotel a {
@@ -357,7 +354,6 @@ ul i {
 .hotel img {
     border-radius: 18px 18px 0 0;
     object-fit: cover;
-    flex-basis: 100%;
 }
 
 .hotel figcaption {
@@ -476,19 +472,14 @@ footer {
 
 @media screen and (min-width: 800px) {
 
-/*
-    .container1 .container3 {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }*/
 
 /* entête du site Reservia */
 
     /* entête logo et liens de navigation */
 
     nav ul {
-        grid-template-columns: 0;
-        grid-row: repeat(9, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(9, 1fr);
         grid-template-areas: 
             "logo . . . . . activ activites inscription";
     }
@@ -590,7 +581,6 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        max-height: auto;
         margin-top: 40px;
     }
     
