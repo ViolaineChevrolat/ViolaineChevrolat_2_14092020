@@ -7,13 +7,11 @@
     src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
 }
 
-
-
 body {
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
     font-size: 16px;
+    padding: 0;
     margin: 0;
-    padding: 0 1em;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -22,17 +20,13 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 0 0.8em;
+    padding: 0;
+    margin: 20px;
+    width: 100%;
 }
 
 h2 {
     font-size: 20px;
-}
-
-.container0 .container1 .container2 .container3 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
 }
 
 * a {
@@ -40,14 +34,17 @@ h2 {
     color: black;
 }
 
-.container1 .container2 {
-    justify-content: center;
+.container1 .container2 .container3 {
+    width: 100%;
 }
-
 
 /* entête du site Reservia */
 
     /* entête logo et liens de navigation */
+
+header {
+    width: 100%;
+}
 
 nav ul {
     display: grid;
@@ -59,7 +56,7 @@ nav ul {
     align-items: center;
     font-size: 16px;
     list-style-type: none;
-    padding: 0 10px;
+    padding: 0;
     margin: 0;
 }
 
@@ -67,18 +64,17 @@ nav ul {
     grid-area: logo;
     justify-self: start;
     padding: 0 20px 10px 0;
+    margin-left: 15px;
 }
 
 .active {
     grid-area: activ;
     text-align: center;
-    width: 100%;
 }
 
 .activites {
     grid-area: activites;
     text-align: center;
-    width: 100%;
 }
 
 .inscription {
@@ -86,7 +82,8 @@ nav ul {
     grid-area: inscription;
     justify-self: end;
     font-weight: 900;
-    padding: 0 25px 10px 20px;
+    padding: 0;
+    margin-right: 15px;
 }
 
 nav a {
@@ -103,11 +100,17 @@ nav a:hover {
     /* paragraphe d'entête */
 
 .title h2 {
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 20px;
+}
+
+.title p {
+    margin-left: 20px;
 }
 
 .title {
     margin: 10px 0;
+    max-width: 400px;
+    width: 100%;
 }
 
 
@@ -116,22 +119,22 @@ nav a:hover {
 form {
     display: flex;
     align-items: center;
-    justify-items: center;
-    margin: 30px 0;
+    width: 350px;
+    margin: 30px 15px;
 }
 
-form label {
+label {
     border-radius: 10px 0 0 10px;
     border: 1px #F2F2F2 solid;
     background: #F2F2F2;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 form i {
-    font-size: 1em;
+    font-size: 1.5em;
     justify-content: center;
-    margin: 12px 0 0 14px;
+    margin: 15px 0 0 15px;
 }
 
 form input[type="text"] {   
@@ -139,7 +142,9 @@ form input[type="text"] {
     border-left: none;
     border-top: #f2f2f2 1px solid;
     border-bottom: #f2f2f2 1px solid;
-    padding: 12px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 18px 0;
     box-sizing: border-box;
 }
 
@@ -150,7 +155,7 @@ form input[type="text"] {
 .iphone {
     border: 1px #0065FC solid;
     border-radius: 0 10px 10px 0;
-    padding: 10px;
+    padding: 17px;
     background-color: #0065FC;
     color: white;
 }
@@ -169,7 +174,8 @@ div h2 {
 
 .filtres {
     display: block;
-    margin: 30px 0;
+    width: 100%;
+    margin: 30px 0 30px 20px;
 }
 
 .filtres ul {
@@ -222,7 +228,8 @@ ul i {
 .info {
     display: flex;
     flex-direction: row;
-    margin: 0 10px 20px 0;
+    max-width: 400px;
+    margin: 0 10px 20px 20px;
 }
 
 .info i {
@@ -247,7 +254,11 @@ ul i {
     border-radius: 20px;
     background-color: #f2f2f2;
     margin: 0;
+    padding: 0;
+    max-width: 399px;
+    width: 100%;
 }
+
 
 .best-title {
     font-weight: 800;
@@ -260,9 +271,8 @@ ul i {
 .the_best {
     display: flex;
     flex-direction: row;
-    max-width: 280px;
-    width: 100%;
-    clear: both;
+    object-fit: cover;
+    max-width: 100%;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
@@ -409,7 +419,7 @@ ul i {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 20px 0 10px 20px;
+    margin: 20px 0 10px 10px;
 }
 
 .sorties {
@@ -417,7 +427,7 @@ ul i {
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     max-width: 365px;
     width: 100%;
     height: 250px;
@@ -453,15 +463,14 @@ footer {
     flex-direction: column;
     background-color: #F2F2F2;
     margin: 0;
-    padding: 0 1em;
+    padding: 20px;
+    /*max-width: 400px;*/
+    width: 100%;
 }
 
-.container3 {
-    margin: 0 20px;
-}
 
 .footer {
-    margin: 0 10px 10px 0;
+    margin: 0 10px 10px 20px;
 }
 
 .footer li {
@@ -476,25 +485,43 @@ footer {
 
 @media screen and (min-width: 400px) {
 
+    header {
+        margin: 5px;
+    }
+    
+    main {
+        margin: 5px;
+    }
+
     
     /* les plus populaires */
 
-   #best {
-        max-width: 768px;
+/*   #best {
+        margin: 0;
+        max-width: 760px;
         width: 100%;
    }
    
     .the_best {
         object-fit: cover;
-        max-width: 600px;
+        max-width: 95%;
+        width: 100%;
+    }*/
+
+    .title {
+        max-width: 800px;
         width: 100%;
     }
 
+    .info {
+        max-width: 600px;
+    }
 
     /* activités */
 
     .activities {
-        justify-content: space-between;
+        justify-content: center;
+        width: 100%;
     }
 
     .sortie1 .sorties {
@@ -519,7 +546,7 @@ footer {
     /* pied de page du site Reservia */
 
     .footer {
-        margin: 0;
+        margin: 0 20px;
     }
 
     .footer h3 {
@@ -539,6 +566,13 @@ footer {
 
 @media screen and (min-width: 769px) {
 
+        body {
+            margin: 1em;
+        }
+
+        main {
+            margin: 0 10px;
+        }
 
 /* entête du site Reservia */
 
@@ -562,11 +596,29 @@ footer {
     }
 
     .inscription {
-        padding-top: 10px;
+        padding-top: 0;
     }
 
 
     /* formulaire de localisation */
+
+    form {
+        width: 750px;
+    }
+    
+    /*label {
+        border-radius: 10px 0 0 10px;
+        border: 1px #F2F2F2 solid;
+        background: #F2F2F2;
+        width: 60px;
+        height: 60px;
+    }*/
+
+    form i {
+        font-size: 1.5em;
+        justify-content: center;
+        margin: 18px 0 0 20px;
+    }
 
     .iphone {
         display: none;
@@ -576,10 +628,10 @@ footer {
         display: inline-block;
         border: 1px #0065FC solid;
         border-radius: 0 10px 10px 0;
-        padding: 12px;
+        padding: 17px;
         background-color: #0065FC;
         color:white;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
 
@@ -617,12 +669,14 @@ footer {
     /*les plus populaires*/
 
     #best {
-        max-width: 400px;
+        max-width: 1400px;
         margin: 0 0;
     }
 
     .the_best {
-        max-width: 360px;
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
         width: 100%;
     }
 
@@ -637,7 +691,7 @@ footer {
         flex-wrap: wrap;
         margin: 0 0 10px 0;
         order: -1;
-        width: 70%;
+        width: 100%;
     }
 
 
@@ -690,7 +744,7 @@ footer {
     .container3 {
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .footer {
@@ -701,23 +755,70 @@ footer {
 
 }
 
+@media screen and (min-width: 1416px) {
 
-@media screen and (min-width: 1570px) {
+    #hebergement {
+        margin-left: 0;
+    }
+
+    #best {
+        max-width: 395px;
+        margin-left: 10px;
+    }
+
+    .the_best {
+        display: flex;
+        justify-content: center;
+        max-width: 346px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    #hebergement {
+        width: 72%;
+    }
+}
+
+
+@media screen and (min-width: 1556px) {
 
     body {
-        max-width: 1556px;
+        max-width: 1555px;
         width: 100%;
-        height: 100%;
+        /*height: auto;*/
+        /*margin: 0;*/
         margin: auto;
         box-shadow: 0 0 10px black;
         background-color: white;
     }
 
     header {
-        padding: 1em;
+        width: 100%;
+        /*padding: 1em;*/
     }
 
     #hebergement {
+        max-width: 1059px;
         margin: 0;
+    }
+
+    main {
+        width: 100%;
+        justify-content: space-around;
+        /*margin-left: 20px;
+        margin-right: 0;*/
+        padding: 0.5em 0 0.5em 0.5em;
+    }
+
+    .sorties {
+        padding: 0;
+    }
+
+    .container3 {
+        /*margin-bottom: 20px;
+        margin-left: 30px;*/
     }
 }
