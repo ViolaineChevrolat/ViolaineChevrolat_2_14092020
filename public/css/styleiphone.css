@@ -37,10 +37,6 @@ h2 {
 
     /* entête logo et liens de navigation */
 
-/*header {
-    width: 100%;
-}*/
-
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,7 +254,6 @@ ul i {
 .the_best {
     display: flex;
     flex-direction: row;
-    /*justify-content: center;*/
     object-fit: cover;
     border: 0 white solid;
     border-radius: 20px;
@@ -338,7 +333,6 @@ ul i {
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
-    /*max-width: 692px;*/
     height: auto;
     margin: 0.8em;
 }
@@ -399,9 +393,6 @@ ul i {
 
 #activities-title {
     font-weight: 900;
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
     margin: 20px 0 0 10px;
 }
 
@@ -487,7 +478,6 @@ footer {
 
     .activities {
         justify-content: center;
-        /*width: 100%;*/
     }
 
     .sortie1 .sorties {
@@ -623,34 +613,14 @@ footer {
     }
 
     .the_best {
-        /*display: flex;*/
         max-width: 100%;
     }
-
-    /*.the_best {
-        display: flex;
-        flex-direction: row;
-        object-fit: cover;
-        border: 0 white solid;
-        border-radius: 20px;
-        background-color: white;
-        box-shadow: 5px 5px 5px #E5E4E4;
-        margin: 15px;
-    }*/
-
-    /*.the_best img {
-        max-width: 100%;
-    }*/
 
     /* hébergements à Marseille */
 
     #hebergement {
-        /*flex-direction: row;
-        flex-wrap: wrap;*/
-        /*margin: 0.8em auto;*/
         margin: 0 1em;
         order: -1;
-       /* width: 100%;*/
     }
 
     .hotel {
@@ -664,12 +634,6 @@ footer {
 
     /* activités */
 
-    .container2 {
-        /*display: flex;
-        flex: 1;
-        /*width: 100%;*/
-    }
-
     #activities-title {
         text-align: center;
         margin-top: 1.5em;
@@ -682,25 +646,6 @@ footer {
         justify-content: center;
         margin-top: 0;
     }
-/*
-    .sorties {
-        margin-left: 0;
-    }
-    .sortie1 .sorties {
-        height: 500px;
-    }
-
-    .sortie1 {
-        margin: 3px 0;
-    }
-
-    .sortie2 {
-        margin: 0;
-    }
-
-    .sortie1 .sorties figure img {
-        width: 100%;
-    }*/
 
 /* pied de page du site Reservia */
 
@@ -731,9 +676,6 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /*margin: 0.8em auto;
-        order: -1;
-        width: 100%;*/
     }
 
     #best {
@@ -762,7 +704,6 @@ footer {
     /*les plus populaires*/
 
     #best {
-        /*max-width: 395px;*/
         margin-left: 10px;
     }
 
@@ -808,46 +749,17 @@ footer {
         background-color: white;
     }
 
-    header {
-        /*max-width: 1500px;
-        width: 100%;*/
-    }
-
     main {
-        /*max-width: 1500px;
-        width: 100%;*/
         justify-content: space-around;
-        /*margin-left: 20px;*/
         padding: 0.5em 0 0.5em 0.5em;
     }
 
     /* hébergements à Marseille */
 
-    #hebergement {
-        /*max-width: 1059px;*/
-        /*margin: 0;*/
-    }
-
-    
-    /*les plus populaires*/
-
-    /*#best {
-        margin: 0;
-    }*/
-
-
     /*les activités*/
 
     .sorties {
         padding: 0;
-    }
-
-    
-    /* pied de page du site Reservia */
-
-    footer {
-        /*max-width: 1512px;
-        width: 100%;*/
     }
 
 }
