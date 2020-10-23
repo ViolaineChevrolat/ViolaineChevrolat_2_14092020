@@ -21,8 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 20px;
-    width: 100%;
+    margin: 0 1em;
 }
 
 h2 {
@@ -34,17 +33,13 @@ h2 {
     color: black;
 }
 
-.container1 .container2 .container3 {
-    width: 100%;
-}
-
 /* entête du site Reservia */
 
     /* entête logo et liens de navigation */
 
-header {
+/*header {
     width: 100%;
-}
+}*/
 
 nav ul {
     display: grid;
@@ -72,7 +67,7 @@ nav ul {
     text-align: center;
 }
 
-.activites {
+.activities-title {
     grid-area: activites;
     text-align: center;
 }
@@ -109,8 +104,6 @@ nav a:hover {
 
 .title {
     margin: 10px 0;
-    max-width: 400px;
-    width: 100%;
 }
 
 
@@ -119,7 +112,6 @@ nav a:hover {
 form {
     display: flex;
     align-items: center;
-    width: 350px;
     margin: 30px 15px;
 }
 
@@ -143,7 +135,6 @@ form input[type="text"] {
     border-top: #f2f2f2 1px solid;
     border-bottom: #f2f2f2 1px solid;
     font-size: 1.2em;
-    text-align: center;
     padding: 18px 0;
     box-sizing: border-box;
 }
@@ -174,7 +165,6 @@ div h2 {
 
 .filtres {
     display: block;
-    width: 100%;
     margin: 30px 0 30px 20px;
 }
 
@@ -228,7 +218,6 @@ ul i {
 .info {
     display: flex;
     flex-direction: row;
-    max-width: 400px;
     margin: 0 10px 20px 20px;
 }
 
@@ -255,8 +244,6 @@ ul i {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    max-width: 399px;
-    width: 100%;
 }
 
 
@@ -271,8 +258,8 @@ ul i {
 .the_best {
     display: flex;
     flex-direction: row;
+    /*justify-content: center;*/
     object-fit: cover;
-    max-width: 100%;
     border: 0 white solid;
     border-radius: 20px;
     background-color: white;
@@ -283,7 +270,6 @@ ul i {
 .the_best a {
     display: flex;
     flex-direction: row;
-    flex-basis: 100%;
 }
 
 .the_best img {
@@ -337,12 +323,10 @@ ul i {
 
 #hebergement h2 {
     font-weight: 900;
-    width: 100%;
     margin: 1em 0 0 1em;
 }
 #hebergement h3 {
     font-weight: 900;
-    width: 100%;
     margin: 0 0 1em 1em;
 }
 
@@ -354,7 +338,7 @@ ul i {
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px #E5E4E4;
-    max-width: 692px;
+    /*max-width: 692px;*/
     height: auto;
     margin: 0.8em;
 }
@@ -409,17 +393,22 @@ ul i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
     height: auto;
 }
 
 #activities-title {
     font-weight: 900;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin: 20px 0 10px 10px;
+    justify-content: space-between;*/
+    margin: 20px 0 0 10px;
+}
+
+.activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sorties {
@@ -464,7 +453,6 @@ footer {
     background-color: #F2F2F2;
     margin: 0;
     padding: 20px;
-    width: 100%;
 }
 
 
@@ -495,20 +483,11 @@ footer {
     
     /* les plus populaires */
 
-    .title {
-        max-width: 800px;
-        width: 100%;
-    }
-
-    .info {
-        max-width: 600px;
-    }
-
     /* activités */
 
     .activities {
         justify-content: center;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .sortie1 .sorties {
@@ -553,10 +532,6 @@ footer {
 
 @media screen and (min-width: 769px) {
 
-        body {
-            margin: 1em;
-        }
-
         main {
             margin: 0 10px;
         }
@@ -588,10 +563,6 @@ footer {
 
 
     /* formulaire de localisation */
-
-    form {
-        width: 750px;
-    }
 
     form i {
         font-size: 1.5em;
@@ -642,37 +613,45 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     /*les plus populaires*/
 
     #best {
-        max-width: 1400px;
-        margin: 0 0;
+        margin: 1em 1em 0 1em;
     }
 
     .the_best {
-        display: flex;
-        justify-content: center;
-        max-width: 500px;
-        width: 100%;
-    }
-
-    .the_best img {
+        /*display: flex;*/
         max-width: 100%;
     }
+
+    /*.the_best {
+        display: flex;
+        flex-direction: row;
+        object-fit: cover;
+        border: 0 white solid;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 5px 5px 5px #E5E4E4;
+        margin: 15px;
+    }*/
+
+    /*.the_best img {
+        max-width: 100%;
+    }*/
 
     /* hébergements à Marseille */
 
     #hebergement {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0 0 10px 0;
+        /*flex-direction: row;
+        flex-wrap: wrap;*/
+        /*margin: 0.8em auto;*/
+        margin: 0 1em;
         order: -1;
-        width: 100%;
+       /* width: 100%;*/
     }
-
 
     .hotel {
         justify-content: space-evenly;
@@ -686,19 +665,24 @@ footer {
     /* activités */
 
     .container2 {
-        display: flex;
+        /*display: flex;
         flex: 1;
-        width: 100%;
+        /*width: 100%;*/
     }
 
-    .activities {
+    #activities-title {
+        text-align: center;
+        margin-top: 1.5em;
+    }
+
+    .activites {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 40px;
+        justify-content: center;
+        margin-top: 0;
     }
-
+/*
     .sorties {
         margin-left: 0;
     }
@@ -716,7 +700,7 @@ footer {
 
     .sortie1 .sorties figure img {
         width: 100%;
-    }
+    }*/
 
 /* pied de page du site Reservia */
 
@@ -734,6 +718,38 @@ footer {
 
 }
 
+@media screen and (min-width: 847px) {
+
+    #best {
+        margin-top: 0;
+    }
+
+
+@media screen and (min-width: 1269px) {
+
+    #hebergement {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*margin: 0.8em auto;
+        order: -1;
+        width: 100%;*/
+    }
+
+    #best {
+        margin-top: 1em;
+    }
+
+    .hebergement-title {
+        width: 100%;
+    }
+
+    .activities {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (min-width: 1416px) {
 
     /* hébergements à Marseille */
@@ -746,7 +762,7 @@ footer {
     /*les plus populaires*/
 
     #best {
-        max-width: 395px;
+        /*max-width: 395px;*/
         margin-left: 10px;
     }
 
@@ -759,12 +775,24 @@ footer {
 
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1520px) {
 
     /* hébergements à Marseille */
 
     #hebergement {
         width: 72%;
+    }
+}
+
+@media screen and (min-width: 1528px) {
+
+    #best {
+        margin-top: 0;
+        justify-content: space-around;
+    }
+
+    #activities-title {
+        text-align: start;
     }
 }
 
@@ -775,37 +803,37 @@ footer {
         max-width: 1555px;
         width: 100%;
         height: auto;
-        margin: auto;
+        margin: 1em;
         box-shadow: 0 0 10px black;
         background-color: white;
     }
 
     header {
-        max-width: 1500px;
-        width: 100%;
+        /*max-width: 1500px;
+        width: 100%;*/
     }
 
     main {
-        max-width: 1500px;
-        width: 100%;
+        /*max-width: 1500px;
+        width: 100%;*/
         justify-content: space-around;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
         padding: 0.5em 0 0.5em 0.5em;
     }
 
     /* hébergements à Marseille */
 
     #hebergement {
-        max-width: 1059px;
-        margin: 0;
+        /*max-width: 1059px;*/
+        /*margin: 0;*/
     }
 
     
     /*les plus populaires*/
 
-    #best {
+    /*#best {
         margin: 0;
-    }
+    }*/
 
 
     /*les activités*/
@@ -818,8 +846,8 @@ footer {
     /* pied de page du site Reservia */
 
     footer {
-        max-width: 1512px;
-        width: 100%;
+        /*max-width: 1512px;
+        width: 100%;*/
     }
 
 }
