@@ -47,15 +47,14 @@ nav ul {
     align-items: center;
     font-size: 16px;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 0
 }
 
 .logo {
     grid-area: logo;
-    justify-self: start;
-    padding: 0 20px 10px 0;
-    margin-left: 15px;
+    justify-self: left;
+    padding: 0;
+    margin-left: 1em;
 }
 
 .active {
@@ -71,15 +70,21 @@ nav ul {
 .inscription {
     color: #0065FC;
     grid-area: inscription;
-    justify-self: end;
+    justify-self: right;
     font-weight: 900;
     padding: 0;
-    margin-right: 15px;
+    margin-right: 1em;
 }
 
-nav a {
+.active a {
     text-align: center;
-    padding: 0 50px 20px 50px;
+    padding: 0 25px 20px 30px;
+
+}
+
+.activities-title a {
+    text-align: center;
+    padding: 0 40px 20px 40px;
 }
 
 nav a:hover {
@@ -154,14 +159,14 @@ form input[type="text"] {
 
     /* filtres de recherche */
 
-div h2 {
+.filtres h2 {
     font-weight: bolder;
     font-size: 1.2em;
 }
 
 .filtres {
     display: block;
-    margin: 30px 0 30px 20px;
+    margin: 1em;
 }
 
 .filtres ul {
@@ -214,7 +219,7 @@ ul i {
 .info {
     display: flex;
     flex-direction: row;
-    margin: 0 10px 20px 20px;
+    margin: 0 0.8em 1em 1em;
 }
 
 .info i {
@@ -391,9 +396,9 @@ ul i {
     height: auto;
 }
 
-#activities-title {
+#activites-title {
     font-weight: 900;
-    margin: 20px 0 0 10px;
+    margin: 1.5em 0 0 1em;
 }
 
 .activites {
@@ -416,7 +421,7 @@ ul i {
 .sorties img {
     object-fit: cover;
     border-radius: 18px 18px 0 0;
-    max-width: 375px;
+    max-width: 365px;
     width: 100%;
     height: 200px;
 }
@@ -464,15 +469,13 @@ footer {
 @media screen and (min-width: 400px) {
 
     header {
-        margin: 5px;
+        margin: 0.5em;
     }
     
     main {
-        margin: 5px;
+        margin: 0.5em;
     }
 
-    
-    /* les plus populaires */
 
     /* activités */
 
@@ -480,20 +483,16 @@ footer {
         justify-content: center;
     }
 
+    #activites-title {
+        margin-left: 1em;
+    }
+
     .sortie1 .sorties {
         width: 100%;
-        height: 500px;
+        height: 510px;
     }
 
-    .sortie1 {
-        margin: 3px 0;
-    }
-
-    .sortie2 {
-        margin: 0;
-    }
-
-   .sortie1 img {
+    .sortie1 img {
         object-fit: cover;
         height: 450px;
     }
@@ -520,10 +519,18 @@ footer {
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 714px) {
+
+    .sortie1 {
+        margin-right: 0.4em;
+    }
+}
+
+
+@media screen and (min-width: 726px) {
 
         main {
-            margin: 0 10px;
+            margin: 0;
         }
 
 /* entête du site Reservia */
@@ -537,8 +544,13 @@ footer {
             "logo . . . . . activ activites inscription";
     }
 
-    nav a {
-        padding: 20px 30px 0 30px;
+    .active a {
+        padding: 25px 25px 20px 30px;
+    }
+    
+    .activities-title a {
+        padding: 25px 35px 20px 35px;
+        margin-right: 1em;
     }
     
     nav a:hover {
@@ -609,7 +621,7 @@ footer {
     /*les plus populaires*/
 
     #best {
-        margin: 1em 1em 0 1em;
+        margin: 1em 0 0 0;
     }
 
     .the_best {
@@ -634,9 +646,9 @@ footer {
 
     /* activités */
 
-    #activities-title {
+    #activites-title {
         text-align: center;
-        margin-top: 1.5em;
+        margin: 1.5em 1em 0 1.5em;
     }
 
     .activites {
@@ -646,6 +658,11 @@ footer {
         justify-content: center;
         margin-top: 0;
     }
+
+    .sorties {
+        margin: 0 0 0.7em 0.5em;
+    }
+
 
 /* pied de page du site Reservia */
 
@@ -663,11 +680,13 @@ footer {
 
 }
 
-@media screen and (min-width: 847px) {
+
+@media screen and (min-width: 800px) {
 
     #best {
         margin-top: 0;
     }
+}
 
 
 @media screen and (min-width: 1269px) {
@@ -685,20 +704,9 @@ footer {
     .hebergement-title {
         width: 100%;
     }
-
-    .activities {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
 
 @media screen and (min-width: 1416px) {
-
-    /* hébergements à Marseille */
-
-    #hebergement {
-        margin-left: 0;
-    }
 
 
     /*les plus populaires*/
@@ -721,7 +729,18 @@ footer {
     /* hébergements à Marseille */
 
     #hebergement {
-        width: 72%;
+        width: 70%;
+    }
+
+    #activites-title {
+        text-align: left;
+    }
+
+    .activities {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
 
@@ -732,8 +751,9 @@ footer {
         justify-content: space-around;
     }
 
-    #activities-title {
-        text-align: start;
+    .activities {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -754,12 +774,9 @@ footer {
         padding: 0.5em 0 0.5em 0.5em;
     }
 
-    /* hébergements à Marseille */
-
     /*les activités*/
 
     .sorties {
         padding: 0;
     }
-
 }
